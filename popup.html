@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  body { width: 280px; margin: 0; padding: 14px; font: 14px/1.4 system-ui, sans-serif; color: #2b2620; background: #fffbe0; }
+  h1 { font-size: 15px; margin: 0 0 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  p { margin: 0 0 12px; color: #6d6456; font-size: 13px; }
+  button { display: block; width: 100%; margin-top: 8px; padding: 9px 10px; font: inherit; cursor: pointer;
+    border: 1px solid #e0d48a; border-radius: 8px; background: #fff; color: inherit; text-align: left; }
+  button.primary { background: #ffd84d; border-color: #b89500; font-weight: 600; }
+  button:disabled { opacity: .5; cursor: default; }
+</style>
+</head>
+<body>
+  <h1 id="host">…</h1>
+  <p id="summary"></p>
+  <button id="pick" class="primary">Mark a list on this page</button>
+  <button id="reset">Put stickers back in the corners</button>
+  <button id="forget">Forget the lists marked on this site</button>
+  <button id="all">All notes, export and import</button>
+  <script src="popup.js"></script>
+</body>
+</html>

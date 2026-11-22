@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Evening School: lesson archive</title>
+<style>
+  /* A made-up course archive, used only to take the store screenshots. */
+  body { margin: 0; font: 16px/1.45 "Helvetica Neue", system-ui, sans-serif; color: #1f2430; background: #f3f4f7; }
+  header { padding: 16px 48px; background: #232b45; color: #fff; font-weight: 700; font-size: 19px; }
+  main { max-width: 900px; margin: 0 auto; padding: 28px 48px 60px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  .sub { color: #666d7d; margin: 0 0 20px; }
+  .list { background: #fff; border: 1px solid #dfe2ea; border-radius: 10px; overflow: hidden; }
+  .lesson { display: flex; align-items: baseline; gap: 16px; padding: 15px 240px 15px 18px; border-top: 1px solid #e8eaf0; }
+  .lesson:first-child { border-top: 0; }
+  .date { flex: none; width: 4.6em; font-size: 14px; color: #666d7d; font-variant-numeric: tabular-nums; }
+  .title { flex: 1; font-weight: 500; color: inherit; text-decoration: none; }
+  .length { flex: none; font-size: 14px; color: #666d7d; font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+  <header>Evening School</header>
+  <main>
+    <h1>Lesson archive</h1>
+    <p class="sub">Autumn term · 10 recordings</p>
+    <div class="list" id="list"></div>
+  </main>
+  <script>
+    const lessons = [
+      ['Sep 6', 'Lesson 1. Yin and Yang: the base of the system', '1:42'],
+      ['Sep 13', 'Lesson 2. Five elements and the generating cycle', '1:55'],
+      ['Sep 20', 'Lesson 3. The ten heavenly stems', '1:38'],
+      ['Sep 27', 'Lesson 4. The twelve earthly branches', '2:04'],
+      ['Oct 4', 'Lesson 5. The sixty-year cycle', '1:47'],
+      ['Oct 11', 'Lesson 6. Reading the charts of participants', '2:15'],
+      ['Oct 18', 'Lesson 7. Seasons and the strength of elements', '1:51'],
+      ['Oct 25', 'Lesson 8. Combinations and clashes', '1:58'],
+      ['Nov 1', 'Lesson 9. Luck pillars', '2:02'],
+      ['Nov 8', 'Lesson 10. Questions and answers', '1:29'],
+    ];
+    lessons.forEach(([date, title, length], i) => {
+      document.getElementById('list').insertAdjacentHTML('beforeend',
+        `<div class="lesson"><span class="date">${date}</span><a class="title" href="/lesson/${i + 1}">${title}</a><span class="length">${length}</span></div>`);
+    });
+  </script>
+</body>
+</html>

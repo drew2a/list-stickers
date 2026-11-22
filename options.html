@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>List Stickers: all notes</title>
+<style>
+  body { max-width: 860px; margin: 0 auto; padding: 24px 16px 60px; font: 15px/1.5 system-ui, sans-serif; color: #2b2620; background: #faf7f1; }
+  h1 { font-size: 22px; margin: 0 0 16px; }
+  h2 { font-size: 17px; margin: 28px 0 8px; }
+  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  button, .file { padding: 8px 14px; font: inherit; cursor: pointer; border: 1px solid #e0d48a; border-radius: 8px; background: #fff; color: inherit; }
+  .file input { display: none; }
+  #message { color: #6d6456; font-size: 14px; }
+  .note { display: grid; grid-template-columns: 28px 1fr auto; gap: 4px 10px; padding: 10px 12px; margin-bottom: 6px;
+    background: #fffbe0; border: 1px solid #e0d48a; border-radius: 10px; }
+  .note .title { font-weight: 600; overflow-wrap: anywhere; }
+  .note .text { grid-column: 2; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .note .date { grid-column: 2; color: #8a8175; font-size: 13px; }
+  .note button { grid-column: 3; grid-row: 1; padding: 2px 8px; font-size: 13px; color: #b3402f; }
+  .empty { color: #6d6456; }
+</style>
+</head>
+<body>
+  <h1>All notes</h1>
+  <div class="toolbar">
+    <button id="export">Save everything to a file</button>
+    <label class="file">Load from a file<input id="import" type="file" accept="application/json,.json"></label>
+    <span id="message"></span>
+  </div>
+  <div id="sites"></div>
+  <script src="options.js"></script>
+</body>
+</html>

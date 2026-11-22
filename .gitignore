@@ -1,0 +1,9 @@
+# Built store package
+dist/
+
+# Agent skills installed with `npx modern-web-guidance install`; skills-lock.json
+# records which ones, so they can be installed again.
+.agents/
+.claude/
+
+.DS_Store
