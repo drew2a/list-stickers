@@ -54,7 +54,10 @@ const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'list-stickers-shots-'));
 const context = await chromium.launchPersistentContext(profile, {
   executablePath: process.env.CHROMIUM || undefined,
   headless: false,
-  viewport: { width: 1280, height: 800 },
+  // A 1024x640 window drawn at 1.25x gives 1280x800 pictures in which the
+  // stickers are large enough to read in the store's small previews.
+  viewport: { width: 1024, height: 640 },
+  deviceScaleFactor: 1.25,
   args: ['--headless=new', `--disable-extensions-except=${extensionDir}`, `--load-extension=${extensionDir}`],
 });
 try {
@@ -70,7 +73,7 @@ try {
 
   await page.goto(origin + '/', { waitUntil: 'load' });
   await page.waitForTimeout(800);
-  await openSticker(0);
+  await openSticker(2);
   await page.waitForTimeout(400);
   await page.screenshot({ path: path.join(outDir, '1-shop.png') });
 
