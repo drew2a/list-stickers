@@ -2,7 +2,7 @@
 // Storage layout is described at the top of content.js.
 
 const SITE_PREFIX = 'site:';
-const STATUS_ICON = { done: '✅', like: '⭐', dislike: '👎', later: '🕒' };
+const STATUS_ICON = { done: '✅', like: '👍', dislike: '👎', later: '🕒' };
 const byId = (id) => document.getElementById(id);
 
 async function readSites() {

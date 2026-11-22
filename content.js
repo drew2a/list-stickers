@@ -10,7 +10,7 @@
   const STORE_KEY = 'site:' + location.hostname;
   const STATUSES = [
     { id: 'done', icon: '✅', label: 'Done: watched, read or tried' },
-    { id: 'like', icon: '⭐', label: 'Like' },
+    { id: 'like', icon: '👍', label: 'Like' },
     { id: 'dislike', icon: '👎', label: 'Dislike' },
     { id: 'later', icon: '🕒', label: 'For later' },
   ];

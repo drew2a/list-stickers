@@ -10,7 +10,7 @@ itself.
 
 ![A tea shop page with sticky notes on three products](screenshots/1-shop.png)
 
-- Mark an item in one click: ✅ done, ⭐ like, 👎 dislike, 🕒 for later.
+- Mark an item in one click: ✅ done, 👍 like, 👎 dislike, 🕒 for later.
 - Write a note on it and find it there tomorrow, even after the list is sorted
   or filtered.
 - Put a sticky note on a whole page, exactly where you clicked.

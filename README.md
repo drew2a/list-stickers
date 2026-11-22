@@ -8,7 +8,7 @@ Each sticker holds a one-click status and a free-text note:
 | Status | Meaning |
 |---|---|
 | ✅ | Done: watched, read or tried |
-| ⭐ | Like |
+| 👍 | Like |
 | 👎 | Dislike |
 | 🕒 | For later |
 

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "List Stickers: Sticky Notes for Any Website",
   "short_name": "List Stickers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Put sticky notes on any web page or list item. Mark products, lessons and articles as done, liked or for later. Private, no account.",
   "homepage_url": "https://github.com/drew2a/list-stickers",
   "icons": {

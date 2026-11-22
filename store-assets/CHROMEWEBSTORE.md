@@ -33,7 +33,7 @@ published.
     Most note extensions attach one note to a whole page. List Stickers attaches a note to each item of a list, so a catalogue of 200 products can hold 200 separate notes, and you can see at a glance what you have already watched, read, tried or rejected.
 
     WHAT YOU CAN DO
-    • Mark an item in one click: ✅ done, ⭐ like, 👎 dislike, 🕒 for later
+    • Mark an item in one click: ✅ done, 👍 like, 👎 dislike, 🕒 for later
     • Write a note on it: "smoky, bitter on the second brew", "rewatch from minute 40"
     • Put a sticky note on a whole page, exactly where you clicked
     • Drag any sticker to where it does not cover what you want to see
@@ -142,3 +142,4 @@ from people who use it matters more than any wording here.
 | Version | Date | What changed |
 |---|---|---|
 | 1.0.0 | 2026-11-22 | First public version |
+| 1.0.1 | 2026-11-22 | The "like" mark is a thumbs up instead of a star |
