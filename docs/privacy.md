@@ -51,5 +51,5 @@ new date.
 
 ## Contact
 
-Questions about this policy: open an issue at
-<https://github.com/drew2a/list-stickers/issues>.
+Questions about this policy: write to <andrei.al.andreev@gmail.com> or open an
+issue at <https://github.com/drew2a/list-stickers/issues>.

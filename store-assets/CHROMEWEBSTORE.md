@@ -5,6 +5,13 @@ strips formatting, so the texts below are plain text: copy them as they are.
 
 Upload the ZIP that `scripts/package.sh` writes to `dist/`.
 
+## Account tab
+
+**Contact email:** andrei.al.andreev@gmail.com. The store shows it on the
+extension's page and sends review and policy notices to it. It has to be
+confirmed through the link the store sends before the extension can be
+published.
+
 ## Store listing tab
 
 **Name** (taken from `manifest.json`)
@@ -58,7 +65,7 @@ Upload the ZIP that `scripts/package.sh` writes to `dist/`.
     Works in Chrome on a computer. Notes do not sync between devices. If a website is redesigned, stickers may disappear until you add one again; the notes themselves are kept.
 
     SUPPORT
-    Questions and bug reports: https://github.com/drew2a/list-stickers/issues
+    Questions and bug reports: andrei.al.andreev@gmail.com or https://github.com/drew2a/list-stickers/issues
     The code is open: https://github.com/drew2a/list-stickers
 
 **Homepage URL:** https://drew2a.github.io/list-stickers/
