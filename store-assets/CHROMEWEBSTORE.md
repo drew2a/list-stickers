@@ -139,7 +139,6 @@ from people who use it matters more than any wording here.
 
 ## Version history
 
-| Version | Date | What changed |
-|---|---|---|
-| 1.0.0 | 2026-11-22 | First public version |
-| 1.0.1 | 2026-11-22 | The "like" mark is a thumbs up instead of a star |
+See [CHANGELOG.md](../CHANGELOG.md). Before uploading a new version, bump
+`version` in `manifest.json`, add its entry there, and run
+`scripts/package.sh`.

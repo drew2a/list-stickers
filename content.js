@@ -218,7 +218,11 @@
     let badge = badges.get(el);
     if (!badge) {
       const host = document.createElement(BADGE_TAG);
-      host.style.cssText = 'all:initial;position:absolute;z-index:50;touch-action:none;';
+      // Above everything inside its list element: some sites put the card's
+      // text on a high layer (z-index 99 on moychay.nl), which hid the sticker
+      // and caught the mouse. The list element itself gets `isolation` below,
+      // so this layer does not lift the sticker over the site's header or menus.
+      host.style.cssText = 'all:initial;position:absolute;z-index:2147482000;touch-action:none;';
       const root = host.attachShadow({ mode: 'open' });
       root.innerHTML = `<style>${BADGE_CSS}</style><button type="button"></button>`;
       badge = { host, button: root.querySelector('button'), key, dragging: false };
@@ -230,7 +234,11 @@
     badge.placeKey = el === PAGE ? 'page:' + key : key;
     if (el === PAGE) badge.host.style.zIndex = '2147483000';
     if (badge.host.parentElement !== el) {
-      if (el !== PAGE && getComputedStyle(el).position === 'static') el.style.position = 'relative';
+      if (el !== PAGE) {
+        const computed = getComputedStyle(el);
+        if (computed.position === 'static') el.style.position = 'relative';
+        if (computed.isolation === 'auto') el.style.isolation = 'isolate';
+      }
       el.appendChild(badge.host);
     }
     paintBadge(badge);

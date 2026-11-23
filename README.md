@@ -95,6 +95,7 @@ An item without a link of its own is recognised by its title.
 | `scripts/package.sh` | Builds the ZIP for the Chrome Web Store into `dist/` |
 | `store-assets/` | Store listing texts (`CHROMEWEBSTORE.md`), screenshots, promo tile, and the script and demo pages that produce the screenshots |
 | `docs/` | The public web page and the privacy policy, served by GitHub Pages |
+| `CHANGELOG.md` | What changed in each version |
 
 ## Checking on real sites
 
